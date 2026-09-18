@@ -13,6 +13,21 @@ export default {
         extend: {
             fontFamily: {
                 sans: ['Figtree', ...defaultTheme.fontFamily.sans],
+                playfair: ['"Playfair Display"', 'Georgia', 'serif'],
+                lato: ['Lato', 'system-ui', 'sans-serif'],
+            },
+            colors: {
+                birlik: {
+                    black:       '#0d0d0d',
+                    cream:       '#f5f0e8',
+                    'cream-dark':'#ede8db',
+                    gold:        '#b8972a',
+                    'gold-light':'#d4af37',
+                },
+            },
+            letterSpacing: {
+                widest2: '0.25em',
+                widest3: '0.35em',
             },
         },
     },
