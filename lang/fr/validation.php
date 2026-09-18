@@ -165,9 +165,13 @@ return [
     ],
 
     'attributes' => [
-        'name' => 'nom',
-        'email' => 'e-mail',
-        'password' => 'mot de passe',
+        'name'           => 'nom',
+        'first_name'     => 'prénom',
+        'last_name'      => 'nom',
+        'email'          => 'adresse e-mail',
+        'password'       => 'mot de passe',
+        'phone'          => 'téléphone',
+        'privacy_policy' => 'politique de confidentialité',
     ],
 
 ];
