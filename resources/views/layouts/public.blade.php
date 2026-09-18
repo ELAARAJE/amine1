@@ -59,6 +59,11 @@
                             Réserver
                         </a>
                         @auth
+                            <a href="{{ route('reservation.history') }}"
+                               class="text-white/80 hover:text-birlik-gold transition-colors text-xs tracking-widest uppercase font-light
+                                      {{ request()->routeIs('reservation.history') ? 'text-birlik-gold' : '' }}">
+                                Mes réservations
+                            </a>
                             <a href="{{ route('dashboard') }}"
                                class="text-white/80 hover:text-birlik-gold transition-colors text-xs tracking-widest uppercase font-light">
                                 Mon compte
@@ -108,6 +113,11 @@
                             Événements
                         </a>
                         @auth
+                            <a href="{{ route('reservation.history') }}"
+                               class="text-white/80 hover:text-birlik-gold py-3 text-sm tracking-widest uppercase font-light border-b border-white/5
+                                      {{ request()->routeIs('reservation.history') ? 'text-birlik-gold' : '' }}">
+                                Mes réservations
+                            </a>
                             <a href="{{ route('dashboard') }}"
                                class="text-white/80 hover:text-birlik-gold py-3 text-sm tracking-widest uppercase font-light border-b border-white/5">
                                 Mon compte
